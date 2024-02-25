@@ -3,6 +3,7 @@
 const fs = require('fs');
 const { program } = require('commander');
 const dotenv = require('dotenv');
+const { version } = require('./package.json'); // Import version from package.json
 
 // Function to load environment variables from a specified file
 function loadEnvFromFile(envFile) {
@@ -93,6 +94,11 @@ program
         console.log(`Restored .env file from backup: ${backupFile}`);
     });
 
+// Define a command to display the version of the CLI tool
+program
+    .version(version, '-v, --version', 'Display version'); // Use version from package.json
+
+    
 // Handle unknown commands
 program.on('command:*', () => {
     console.error(`Error: Invalid command. Use '--help' for usage information.`);
