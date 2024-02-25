@@ -3,10 +3,16 @@
   "version": "1.0.1",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "type": "module",
+  "bin": {
+    "manage-env": "index.js"
   },
-  "keywords": [],
+  "scripts": {
+    "test": "npm run test"
+  },
+  "keywords": [
+    "npm"
+  ],
   "author": "dasanik2001",
   "license": "MIT",
   "dependencies": {

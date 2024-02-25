@@ -7,14 +7,6 @@
 
 This project requires NodeJS (version 8 or later) and NPM.
 [Node](http://nodejs.org/) and [NPM](https://npmjs.org/) are really easy to install.
-To make sure you have them available on your machine,
-try running the following command.
-
-```sh
-$ npm install -g manage-env
-$ manage-env -v
-1.0.0
-```
 
 ## Getting Started
 
@@ -26,11 +18,13 @@ To install and set up the library, run:
 
 ```sh
 $ npm install -g manage-env
+$ manage-env -v
+1.0.0
 ```
 
 ## Usage
 
-### Serving the app
+### Using the package
 
 ```sh
 $ manage-env [options] [command]
