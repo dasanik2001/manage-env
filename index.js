@@ -80,7 +80,7 @@ program
   });
 
 program
-  .command("use")
+  .command("select")
   .description("Use a specific environment file")
   .action(async (envFile) => {
     const envFiles = fs

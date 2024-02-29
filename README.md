@@ -32,7 +32,8 @@ $ manage-env [options] [command]
 
 | options | Command | Description |
 | --- | --- | --- |
-| use | `<envFile>` | Use a specific environment file |
+| create | `<envFile>` | Create a specific environment file |
+| select |  | Use a specific environment file |
 | get | `<key>`  | Get the value for a key |
 | set |` <key> <value>` | Set the value for a key |
 | backup |  | Create a backup of the .env file |
